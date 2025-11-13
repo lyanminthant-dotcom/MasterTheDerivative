@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derivatives</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><i class="fas fa-calculator"></i> MathTutor</a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="lecture.html">LECTURES</a></li>
+                    <li><a href="about_us.html">ABOUT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="text-box">
+            <h1>Master Mathematics with Expert Tutoring</h1>
+            <p>Unlock your potential in calculus, algebra, and advanced mathematics with personalized, comprehensive tutoring sessions designed to help you succeed.</p>
+            <a href="lecture.html" class="hero-btn">Explore Lectures</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h1>Why Choose Our Tutoring?</h1>
+        <p>Comprehensive learning resources designed for your success</p>
+
+        <div class="row">
+            <div class="feature-col">
+                <i class="fas fa-video"></i>
+                <h3>Video Lectures</h3>
+                <p>Access comprehensive video tutorials covering all major topics in calculus and advanced mathematics.</p>
+            </div>
+            <div class="feature-col">
+                <i class="fas fa-book"></i>
+                <h3>Practice Problems</h3>
+                <p>Reinforce your learning with carefully curated practice questions and step-by-step solutions.</p>
+            </div>
+            <div class="feature-col">
+                <i class="fas fa-chart-line"></i>
+                <h3>Track Progress</h3>
+                <p>Monitor your improvement with assessments and detailed feedback on your performance.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Topics Section -->
+    <section class="topics">
+        <h1>What We Cover</h1>
+        <p>Comprehensive coverage of MCV4U curriculum</p>
+
+        <div class="row">
+            <div class="topic-col">
+                <img src="https://via.placeholder.com/300x200/4A90E2/FFFFFF?text=Derivatives" alt="Derivatives">
+                <div class="layer">
+                    <h3>Derivatives</h3>
+                    <p>Master the fundamental concepts of differentiation and its applications.</p>
+                </div>
+            </div>
+            <div class="topic-col">
+                <img src="https://via.placeholder.com/300x200/E94B3C/FFFFFF?text=Limits" alt="Limits">
+                <div class="layer">
+                    <h3>Limits</h3>
+                    <p>Understand limits, continuity, and their role in calculus.</p>
+                </div>
+            </div>
+            <div class="topic-col">
+                <img src="https://via.placeholder.com/300x200/50C878/FFFFFF?text=Applications" alt="Applications">
+                <div class="layer">
+                    <h3>Applications</h3>
+                    <p>Apply calculus to solve real-world problems and optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Dedicated to helping students master mathematics through comprehensive tutoring and quality educational resources.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fas fa-heart"></i> for students</p>
+    </section>
+
+    <!-- JavaScript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

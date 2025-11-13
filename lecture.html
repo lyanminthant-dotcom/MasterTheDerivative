@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derivatives</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><i class="fas fa-calculator"></i> MathTutor</a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="lecture.html" class="active">LECTURES</a></li>
+                    <li><a href="about_us.html">ABOUT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Our Lectures</h1>
+            <p>Comprehensive video tutorials and learning materials</p>
+        </div>
+    </section>
+
+    <!-- Lectures Content -->
+    <section class="lecture-content">
+        <div class="row">
+            <div class="lecture-left">
+                <img src="https://via.placeholder.com/800x500/4A90E2/FFFFFF?text=Lecture+Video" alt="Lecture">
+                <h2>Introduction to Derivatives</h2>
+                <p>In this comprehensive lecture, we explore the fundamental concepts of derivatives, starting with the definition and geometric interpretation. We'll cover:</p>
+                <br>
+                <p>• The limit definition of the derivative</p>
+                <p>• Understanding rates of change</p>
+                <p>• Basic differentiation rules</p>
+                <p>• Applications in real-world problems</p>
+                <br>
+                <p>This lecture is designed for students beginning their journey in calculus and provides a solid foundation for more advanced topics.</p>
+
+                <div class="comment-box">
+                    <h3>Leave a Comment</h3>
+                    <form class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn">Post Comment</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="lecture-right">
+                <h3>Lecture Categories</h3>
+                <div>
+                    <span>Limits</span>
+                    <span>12</span>
+                </div>
+                <div>
+                    <span>Continuity</span>
+                    <span>8</span>
+                </div>
+                <div>
+                    <span>Differentiability</span>
+                    <span>15</span>
+                </div>
+                <div>
+                    <span>Derivatives</span>
+                    <span>10</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lecture List Section -->
+    <section class="lecture-list">
+        <h1>Available Lectures</h1>
+        <p>Browse through our comprehensive collection of video lectures</p>
+
+        <div class="row">
+            <div class="lecture-col">
+                <a href="#">
+                    <div>
+                        <i class="fas fa-play-circle"></i>
+                        <h2>Derivatives Basics</h2>
+                        <p>Introduction to the concept of derivatives and their fundamental properties.</p>
+                        <span class="duration"><i class="fas fa-clock"></i> 45 min</span>
+                    </div>
+                </a>
+            </div>
+            <div class="lecture-col">
+                <a href="#">
+                    <div>
+                        <i class="fas fa-play-circle"></i>
+                        <h2>Chain Rule</h2>
+                        <p>Master the chain rule for differentiating composite functions.</p>
+                        <span class="duration"><i class="fas fa-clock"></i> 35 min</span>
+                    </div>
+                </a>
+            </div>
+            <div class="lecture-col">
+                <a href="#">
+                    <div>
+                        <i class="fas fa-play-circle"></i>
+                        <h2>Product & Quotient Rules</h2>
+                        <p>Learn how to differentiate products and quotients of functions.</p>
+                        <span class="duration"><i class="fas fa-clock"></i> 40 min</span>
+                    </div>
+                </a>
+            </div>
+            <div class="lecture-col">
+                <a href="#">
+                    <div>
+                        <i class="fas fa-play-circle"></i>
+                        <h2>Limits and Continuity</h2>
+                        <p>Understanding limits and the concept of continuity in functions.</p>
+                        <span class="duration"><i class="fas fa-clock"></i> 50 min</span>
+                    </div>
+                </a>
+            </div>
+            <div class="lecture-col">
+                <a href="#">
+                    <div>
+                        <i class="fas fa-play-circle"></i>
+                        <h2>Optimization Problems</h2>
+                        <p>Apply derivatives to solve real-world optimization problems.</p>
+                        <span class="duration"><i class="fas fa-clock"></i> 55 min</span>
+                    </div>
+                </a>
+            </div>
+            <div class="lecture-col">
+                <a href="#">
+                    <div>
+                        <i class="fas fa-play-circle"></i>
+                        <h2>Related Rates</h2>
+                        <p>Solve problems involving rates of change of related quantities.</p>
+                        <span class="duration"><i class="fas fa-clock"></i> 42 min</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Dedicated to helping students master mathematics through comprehensive tutoring and quality educational resources.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fas fa-heart"></i> for students</p>
+    </section>
+
+    <!-- JavaScript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

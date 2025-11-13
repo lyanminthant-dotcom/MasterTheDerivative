@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Tutoring - About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="logo">
+                <a href="index.html"><i class="fas fa-calculator"></i> MathTutor</a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="lecture.html">LECTURES</a></li>
+                    <li><a href="about_us.html" class="active">ABOUT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>About Us</h1>
+            <p>Learn more about our mission and commitment to your success</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We Are Committed to Your Success</h1>
+                <p>Our math tutoring platform was created with a simple goal: to make advanced mathematics accessible, understandable, and enjoyable for every student. We believe that with the right guidance and resources, anyone can excel in calculus and advanced mathematics.</p>
+                <p>Our team consists of experienced educators and mathematics professionals who are passionate about teaching. We've designed our curriculum to align with the MCV4U course requirements while providing additional depth and clarity that helps students truly understand the concepts.</p>
+                <p>Whether you're struggling with derivatives, limits, or applications of calculus, our comprehensive video lectures, practice problems, and assessments are designed to support your learning journey every step of the way.</p>
+                <a href="lecture.html" class="hero-btn red-btn">Explore Our Lectures</a>
+            </div>
+            <div class="about-col">
+                <img src="https://via.placeholder.com/600x400/4A90E2/FFFFFF?text=Math+Tutoring" alt="About Us">
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission -->
+    <section class="mission">
+        <h1>Our Mission</h1>
+        <p>Empowering students to achieve excellence in mathematics</p>
+
+        <div class="row">
+            <div class="mission-col">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Quality Education</h3>
+                <p>We provide high-quality, comprehensive educational content that covers all aspects of the MCV4U curriculum.</p>
+            </div>
+            <div class="mission-col">
+                <i class="fas fa-users"></i>
+                <h3>Student-Centered</h3>
+                <p>Our approach is designed around student needs, with flexible learning options and personalized support.</p>
+            </div>
+            <div class="mission-col">
+                <i class="fas fa-trophy"></i>
+                <h3>Proven Results</h3>
+                <p>Our students consistently achieve better grades and deeper understanding of mathematical concepts.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="stats">
+        <div class="row">
+            <div class="stat-col">
+                <h2>500+</h2>
+                <p>Students Enrolled</p>
+            </div>
+            <div class="stat-col">
+                <h2>50+</h2>
+                <p>Video Lectures</p>
+            </div>
+            <div class="stat-col">
+                <h2>200+</h2>
+                <p>Practice Problems</p>
+            </div>
+            <div class="stat-col">
+                <h2>95%</h2>
+                <p>Success Rate</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h1>Get In Touch</h1>
+        <p>Have questions? We'd love to hear from you!</p>
+        <a href="mailto:contact@mathtutor.com" class="hero-btn">Contact Us</a>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Dedicated to helping students master mathematics through comprehensive tutoring and quality educational resources.</p>
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fas fa-heart"></i> for students</p>
+    </section>
+
+    <!-- JavaScript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
